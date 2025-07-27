@@ -2,7 +2,6 @@ import Headings from '@/components/heading'
 import { Button } from '@/components/ui/button'
 import { Plus } from 'lucide-react'
 import { Separator } from "@/components/ui/separator"
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from "@clerk/clerk-react";
 import { useState } from 'react'
@@ -14,7 +13,7 @@ import { toast } from 'sonner'
 import { Skeleton } from "@/components/ui/skeleton"
 import {InterviewPin} from '@/components/pin'
 
-const dashboard = () => {
+const Dashboard = () => {
   const [loading, setLoading] = useState(false);
   const { userId } = useAuth();
   const [interviews, setInterviews] = useState<Interview[]>([]);
@@ -106,4 +105,4 @@ const dashboard = () => {
   </>
 }
 
-export default dashboard
+export default Dashboard

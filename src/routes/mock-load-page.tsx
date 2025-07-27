@@ -1,4 +1,4 @@
-import React from 'react'
+
 import type{ Interview } from "@/types";
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";

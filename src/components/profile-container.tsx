@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useAuth, UserButton } from '@clerk/clerk-react'
 import { Loader } from 'lucide-react'
 import { Button } from './ui/button';
